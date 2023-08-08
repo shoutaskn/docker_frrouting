@@ -1,4 +1,4 @@
-FROM frrouting/frr:v7.5.0
+FROM frrouting/frr
 RUN apk update && apk add tcpdump
 COPY vtysh.conf /etc/frr/
 COPY daemons /etc/frr/
