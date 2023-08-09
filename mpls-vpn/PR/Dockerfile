@@ -1,5 +1,5 @@
 FROM frrouting/frr
-RUN apk update && apk add  tcpdump
+RUN apk update && apk add tcpdump
 COPY vtysh.conf /etc/frr/
 COPY daemons /etc/frr/
 COPY docker-start /usr/lib/frr/docker-start
